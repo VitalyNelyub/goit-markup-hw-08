@@ -1,6 +1,6 @@
 .team {
   background-color: var(--bgc-btn);
-  padding: 94px 0;
+  padding: 60px 0;
   &__title {
     color: var(--title-text-color);
     font-weight: 700;
@@ -13,8 +13,9 @@
 
 .employee {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
-    &__name {
+  &__name {
     color: var(--title-text-color);
     font-weight: 500;
     font-size: 16px;
@@ -33,15 +34,34 @@
 
 .employee__img {
   background-color: var(--primaci-bg-color);
-  width: calc((100% - 90px) / 4);
+  width: 100%;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 30px) / 2);
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 90px) / 4);
+  }
+}
+
+.employee__photo {
+  width: 450px;
+  height: 460px;
+  @media screen and (min-width: 768px) {
+    width: 354px;
+    height: 374px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+    height: 260px;
+  }
 }
 
 .employee__info {
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 24px;
 }
 
 .socials {
@@ -50,10 +70,10 @@
   gap: 10px;
   &__link:hover,
   &__link:focus {
-  background-color: var(--accent-color);
-  color: var(--primaci-bg-color);
-}
+    background-color: var(--accent-color);
+    color: var(--primaci-bg-color);
   }
+}
 
 .socials__link {
   width: 44px;

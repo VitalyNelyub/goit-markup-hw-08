@@ -440,7 +440,7 @@ header {
 
 .team {
   background-color: var(--bgc-btn);
-  padding: 94px 0;
+  padding: 60px 0;
 }
 .team__title {
   color: var(--title-text-color);
@@ -455,6 +455,8 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 30px;
 }
 .employee__name {
@@ -475,15 +477,42 @@ header {
 
 .employee__img {
   background-color: var(--primaci-bg-color);
-  width: calc((100% - 90px) / 4);
+  width: 100%;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
+@media screen and (min-width: 768px) {
+  .employee__img {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .employee__img {
+    width: calc((100% - 90px) / 4);
+  }
+}
+
+.employee__photo {
+  width: 450px;
+  height: 460px;
+}
+@media screen and (min-width: 768px) {
+  .employee__photo {
+    width: 354px;
+    height: 374px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .employee__photo {
+    width: 270px;
+    height: 260px;
+  }
+}
 
 .employee__info {
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 24px;
 }
 
 .socials {
