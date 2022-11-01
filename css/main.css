@@ -94,10 +94,20 @@ textarea {
 }
 
 .container {
-  width: 1200px;
+  width: 480px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .visually-hidden {
@@ -299,8 +309,8 @@ header {
 }
 
 .mind-page {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .mind-page__title {
   color: var(--title-text-color);
@@ -309,24 +319,41 @@ header {
   line-height: 1.14;
   text-transform: uppercase;
   margin-bottom: 10px;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .mind-page__title {
+    text-align: left;
+  }
 }
 .mind-page__list {
   color: var(--primary-text-color);
   line-height: 1.71;
-  width: 270px;
 }
 
 .mind__grid {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .mind__item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .mind__item {
+    width: calc((100% - 90px) / 4);
+  }
 }
 
 .mind__item::before {
   display: block;
   content: "";
-  height: 270px;
   height: 120px;
   background-repeat: no-repeat;
   background-position: center;
