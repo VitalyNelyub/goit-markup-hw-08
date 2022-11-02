@@ -1,29 +1,30 @@
 .partners {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   &__title {
     color: var(--title-text-color);
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
   }
 }
 
 .clients {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
 }
 
 .clients__item {
-  width: 170px;
+  width: 210px;
   height: 92px;
 }
 
 .clients__logo {
-  width: 170px;
+  width: 210px;
   height: 92px;
   display: flex;
   align-items: center;

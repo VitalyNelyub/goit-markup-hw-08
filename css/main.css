@@ -554,8 +554,8 @@ header {
 }
 
 .partners {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .partners__title {
   color: var(--title-text-color);
@@ -563,13 +563,15 @@ header {
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .clients {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -577,12 +579,12 @@ header {
 }
 
 .clients__item {
-  width: 170px;
+  width: 210px;
   height: 92px;
 }
 
 .clients__logo {
-  width: 170px;
+  width: 210px;
   height: 92px;
   display: -webkit-box;
   display: -ms-flexbox;
