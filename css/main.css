@@ -1009,19 +1009,34 @@ header {
 }
 
 .filter {
-  padding: 94px 0;
+  padding: 60px 0px;
 }
 
 .filter__btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 8px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 50px;
+  width: 326px;
+  margin-bottom: 40px;
 }
+@media screen and (min-width: 768px) {
+  .filter__btn {
+    margin-bottom: 30px;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .filter__btn {
+    margin-bottom: 50px;
+  }
+}
+
 .filter__btn--animation {
   font-family: "Roboto";
   font-weight: 500;
@@ -1049,14 +1064,29 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 30px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  gap: 30px;
 }
 
 .projects__card {
-  width: calc((100% - 60px) / 3);
+  width: 100%;
   border: 1px solid var(--border-color);
+}
+@media screen and (min-width: 768px) {
+  .projects__card {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .projects__card {
+    width: calc((100% - 60px) / 3);
+  }
+}
+
+.animation--img {
+  width: 100%;
+  height: 294px;
 }
 
 .projects__link {
@@ -1106,7 +1136,7 @@ header {
   position: absolute;
   top: 0;
   left: 0;
-  padding: 63px 24px;
+  padding: 77px 24px;
   font-size: 18px;
   line-height: 1.56;
   letter-spacing: 0.03em;
@@ -1118,4 +1148,9 @@ header {
   transition: -webkit-transform var(--transition-time);
   transition: transform var(--transition-time);
   transition: transform var(--transition-time), -webkit-transform var(--transition-time);
+}
+@media screen and (min-width: 768px) {
+  .animation__text {
+    padding: 63px 24px;
+  }
 }/*# sourceMappingURL=main.css.map */
