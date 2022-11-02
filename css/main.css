@@ -261,20 +261,31 @@ header {
 
 .hero {
   background-color: var(--bg-footer-color);
-  padding: 200px 0;
+  padding: 118px 0;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../imeges/hero-bg.jpg);
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../imeges/hero-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  max-width: 1600px;
-  height: 600px;
+  max-width: 480px;
+  height: 400px;
   margin-left: auto;
   margin-right: auto;
 }
+@media screen and (min-width: 768px) {
+  .hero {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    max-width: 1600px;
+  }
+}
 .hero__title {
+  max-width: 360px;
   font-weight: 900;
-  font-size: 44px;
+  font-size: 24px;
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -283,7 +294,19 @@ header {
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 30px;
-  max-width: 696px;
+}
+@media screen and (min-width: 768px) {
+  .hero__title {
+    font-size: 26px;
+    line-height: 1.62;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+    line-height: 1.36;
+    max-width: 696px;
+  }
 }
 
 .order-btn {
@@ -298,8 +321,8 @@ header {
   display: block;
   margin: 0 auto;
   border-radius: 4px;
-  padding: 10px 32px;
-  min-width: 216px;
+  padding: 10px 24px;
+  min-width: 200px;
   -webkit-transition: color var(--transition-time), background-color var(--transition-time);
   transition: color var(--transition-time), background-color var(--transition-time);
 }
