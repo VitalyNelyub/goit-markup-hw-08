@@ -10,7 +10,7 @@ header {
   align-items: center;
 }
 .header__list {
-  display: flex;
+  display: none;
   gap: 50px;
   margin-left: 93px;
 }
@@ -29,6 +29,11 @@ header {
 
 .logo__part--dark {
   color: var(--title-text-color);
+}
+
+.menu-btn {
+  margin-left: auto;
+  background-color: transparent;
 }
 
 .header__link {
@@ -81,7 +86,7 @@ header {
 }
 
 .contacts {
-  display: flex;
+  display: none;
   margin-left: auto;
   gap: 50px;
   &__link {
