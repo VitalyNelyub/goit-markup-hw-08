@@ -35,6 +35,7 @@
 .employee__img {
   background-color: var(--primaci-bg-color);
   width: 480px;
+  height: 622px;
   margin-left: auto;
   margin-right: auto;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -42,9 +43,11 @@
   border-radius: 0px 0px 4px 4px;
   @media screen and (min-width: 768px) {
     width: 354px;
+    height: 536px;
   }
   @media screen and (min-width: 1200px) {
     width: 270px;
+    height: 428px;
   }
 }
 

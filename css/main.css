@@ -419,6 +419,11 @@ header {
 .activity {
   padding-bottom: 94px;
 }
+@media screen and (max-width: 1199px) {
+  .activity {
+    display: none;
+  }
+}
 
 .activity__title {
   color: var(--title-text-color);
@@ -502,6 +507,7 @@ header {
 .employee__img {
   background-color: var(--primaci-bg-color);
   width: 480px;
+  height: 622px;
   margin-left: auto;
   margin-right: auto;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -511,11 +517,13 @@ header {
 @media screen and (min-width: 768px) {
   .employee__img {
     width: 354px;
+    height: 536px;
   }
 }
 @media screen and (min-width: 1200px) {
   .employee__img {
     width: 270px;
+    height: 428px;
   }
 }
 
