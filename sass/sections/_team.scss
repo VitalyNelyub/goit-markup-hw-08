@@ -4,22 +4,35 @@
   &__title {
     color: var(--title-text-color);
     font-weight: 700;
-    font-size: 36px;
+    font-size: 28px;
     line-height: 1.17;
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
   }
 }
 
+.employee__photo {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.employee__img {
+  background-color: var(--primaci-bg-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.employee__img:not(:last-child) {
+  margin-bottom: 30px;
+}
+
 .employee {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
   &__name {
-    color: var(--title-text-color);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
+    color: var(--title-text-color);
     text-align: center;
     margin-bottom: 10px;
   }
@@ -32,46 +45,6 @@
   }
 }
 
-.employee__img {
-  background-color: var(--primaci-bg-color);
-  width: 480px;
-  height: 622px;
-  margin-left: auto;
-  margin-right: auto;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-  @media screen and (min-width: 768px) {
-    width: 354px;
-    height: 536px;
-  }
-  @media screen and (min-width: 1200px) {
-    width: 270px;
-    height: 428px;
-  }
-}
-
-.employee__photo {
-  width: 450px;
-  height: 460px;
-  @media screen and (min-width: 768px) {
-    width: 354px;
-    height: 374px;
-  }
-  @media screen and (min-width: 1200px) {
-    width: 270px;
-    height: 260px;
-  }
-}
-
-.employee__info {
-  padding-top: 30px;
-  padding-bottom: 24px;
-  @media screen and (min-width: 1200px) {
-    padding-bottom: 30px;
-  }
-}
-
 .socials {
   display: flex;
   justify-content: center;
@@ -81,6 +54,10 @@
     background-color: var(--accent-color);
     color: var(--primaci-bg-color);
   }
+}
+
+.socials__item {
+  padding-bottom: 24px;
 }
 
 .socials__link {
@@ -100,3 +77,106 @@
 .socials__icon {
   fill: currentColor;
 }
+
+// .team {
+//   background-color: var(--bgc-btn);
+//   padding: 60px 0;
+//   &__title {
+//     color: var(--title-text-color);
+//     font-weight: 700;
+//     font-size: 36px;
+//     line-height: 1.17;
+//     text-align: center;
+//     margin-bottom: 50px;
+//   }
+// }
+
+// .employee {
+//   display: flex;
+//   flex-wrap: wrap;
+//   gap: 30px;
+//   &__name {
+//     color: var(--title-text-color);
+//     font-weight: 500;
+//     font-size: 16px;
+//     line-height: 1.19;
+//     text-align: center;
+//     margin-bottom: 10px;
+//   }
+//   &__direction {
+//     color: var(--primary-text-color);
+//     font-size: 16px;
+//     line-height: 1.19;
+//     text-align: center;
+//     margin-bottom: 16px;
+//   }
+// }
+
+// .employee__img {
+//   background-color: var(--primaci-bg-color);
+//   width: 480px;
+//   height: 622px;
+//   margin-left: auto;
+//   margin-right: auto;
+//   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+//     0px 2px 1px rgba(0, 0, 0, 0.2);
+//   border-radius: 0px 0px 4px 4px;
+//   @media screen and (min-width: 768px) {
+//     width: 354px;
+//     height: 536px;
+//   }
+//   @media screen and (min-width: 1200px) {
+//     width: 270px;
+//     height: 428px;
+//   }
+// }
+
+// .employee__photo {
+//   width: 450px;
+//   height: 460px;
+//   @media screen and (min-width: 768px) {
+//     width: 354px;
+//     height: 374px;
+//   }
+//   @media screen and (min-width: 1200px) {
+//     width: 270px;
+//     height: 260px;
+//   }
+// }
+
+// .employee__info {
+//   padding-top: 30px;
+//   padding-bottom: 24px;
+//   @media screen and (min-width: 1200px) {
+//     padding-bottom: 30px;
+//   }
+// }
+
+// .socials {
+//   display: flex;
+//   justify-content: center;
+//   gap: 10px;
+//   &__link:hover,
+//   &__link:focus {
+//     background-color: var(--accent-color);
+//     color: var(--primaci-bg-color);
+//   }
+// }
+
+// .socials__link {
+//   width: 44px;
+//   height: 44px;
+//   border-radius: 50%;
+//   background-color: transparent;
+//   display: flex;
+//   background-position: center;
+//   align-items: center;
+//   justify-content: center;
+//   color: #afb1b8;
+
+//   transition: color var(--transition-time), background-color var(--transition-time);
+// }
+
+// .socials__icon {
+//   fill: currentColor;
+// }
