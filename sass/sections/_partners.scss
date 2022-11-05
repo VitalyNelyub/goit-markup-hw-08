@@ -2,10 +2,6 @@
   padding: 60px 0;
   margin-right: auto;
   margin-left: auto;
-  @media screen and (min-width: 1200px) {
-    max-width: 1200px;
-    padding: 94px 0;
-  }
   &__title {
     color: var(--title-text-color);
     font-weight: 700;
