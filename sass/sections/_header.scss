@@ -150,6 +150,7 @@ header {
 .mob-menu {
   position: fixed;
   top: 0;
+  z-index: 2;
   background-color: var(--primaci-bg-color);
   width: 100vw;
   height: 100vh;
@@ -208,6 +209,10 @@ header {
 
 .mob-soc__link:not(:last-child) {
   margin-right: 20px;
+}
+
+.mob-menu__link--current {
+   color: var(--accent-color);
 }
 
 .mob-contacts__list {

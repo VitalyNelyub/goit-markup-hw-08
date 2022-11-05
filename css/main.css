@@ -325,6 +325,7 @@ header {
 .mob-menu {
   position: fixed;
   top: 0;
+  z-index: 2;
   background-color: var(--primaci-bg-color);
   width: 100vw;
   height: 100vh;
@@ -383,6 +384,10 @@ header {
   margin-right: 20px;
 }
 
+.mob-menu__link--current {
+  color: var(--accent-color);
+}
+
 .mob-contacts__list {
   margin-bottom: 64px;
 }
@@ -407,13 +412,6 @@ header {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-}
-@media screen and (min-width: 1200px) {
-  .hero {
-    width: 1600px;
-    margin-left: auto;
-    margin-right: auto;
-  }
 }
 
 .hero__container {
