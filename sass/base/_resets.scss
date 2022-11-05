@@ -16,6 +16,10 @@ body {
   letter-spacing: 0.03em;
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 p,
 h1,
 h2,

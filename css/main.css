@@ -33,6 +33,10 @@ body {
   letter-spacing: 0.03em;
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 p,
 h1,
 h2,
@@ -1056,10 +1060,10 @@ header {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
+  overflow-y: scroll;
   -webkit-transition: opacity var(--transition-time);
   transition: opacity var(--transition-time);
 }
-
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
@@ -1074,8 +1078,8 @@ header {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
   background-color: #fff;
   border-radius: 4px;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1087,6 +1091,12 @@ header {
   transition: transform var(--transition-time);
   transition: transform var(--transition-time), -webkit-transform var(--transition-time);
   padding: 40px;
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .close-btn {
@@ -1119,11 +1129,16 @@ header {
 .form__title {
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5em;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
   margin-bottom: 12px;
+}
+@media screen and (min-width: 1200px) {
+  .form__title {
+    line-height: 1.15;
+  }
 }
 
 .form__fields {
@@ -1188,22 +1203,32 @@ header {
   margin-top: 20px;
 }
 .confirm__info {
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 8.38px;
-  margin-left: 12px;
+  gap: 8px;
+}
+@media screen and (min-width: 1200px) {
+  .confirm__info {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .confirm__info {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 8.38px;
+    margin-left: 12px;
+  }
 }
 .confirm__docs {
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--accent-color);
 }
