@@ -155,20 +155,38 @@
           <h2 class="activity__title">Чим ми займаємося</h2>
           <ul class="activity__list list">
             <li class="activity__img">
-              <img src="./imeges/box-1-min.jpg" alt="верстка" />
+              <picture>
+                <source
+                  srcset="./imeges/box-1.jpg 1x, ./imeges/box-1-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+              <img src="./imeges/box-1.jpg" alt="верстка" />
+              </picture>
               <p class="activity__text">Десктопні додатки</p>
             </li>
             <li class="activity__img">
+              <picture>
+                <source
+                  srcset="./imeges/box-2.jpg 1x, ./imeges/box-2-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
               <img
-                src="./imeges/box-2-min.jpg"
+                src="./imeges/box-2.jpg"
                 alt="розробка мобільного додатку"
                 width="370"
                 height="294"
               />
+              </picture>
               <p class="activity__text">Мобільні додатки</p>
             </li>
             <li class="activity__img">
-              <img src="./imeges/box-3-min.jpg" alt="стилізація сайту" width="370" height="294" />
+              <picture>
+                <source
+                  srcset="./imeges/box-3.jpg 1x, ./imeges/box-3-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+              <img src="./imeges/box-3.jpg" alt="стилізація сайту" width="370" height="294" />
+              </picture>
               <p class="activity__text">Дизайнерські рішення</p>
             </li>
           </ul>
