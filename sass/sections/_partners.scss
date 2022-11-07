@@ -2,6 +2,9 @@
   padding: 60px 0;
   margin-right: auto;
   margin-left: auto;
+   @media screen and (min-width: 1200px) {
+    padding: 94px 0;
+   }
   &__title {
     color: var(--title-text-color);
     font-weight: 700;
@@ -11,18 +14,17 @@
     letter-spacing: 0.03em;
     margin-bottom: 30px;
     @media screen and (min-width: 1200px) {
-    font-size: 36px;
-    line-height: 1.16;
-    margin-bottom: 50px;
-  }
+      font-size: 36px;
+      line-height: 1.16;
+      margin-bottom: 50px;
     }
+  }
 }
 
 .clients {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  padding: 0 15px;
 }
 
 .clients__item {

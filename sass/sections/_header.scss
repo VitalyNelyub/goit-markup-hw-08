@@ -17,6 +17,12 @@ header {
   line-height: 1.19;
 }
 
+.logo--header {
+   @media screen and (max-width: 767px) {
+  padding: 16px 0;
+}
+}
+
 .logo__part--dark {
   color: var(--title-text-color);
 }
