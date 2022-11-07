@@ -207,8 +207,16 @@ header {
   }
 }
 
+.mob-menu__soc {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 10px;
+}
+
 .mob-soc__link:not(:last-child) {
-  margin-right: 20px;
+  margin-right: 10px;
+  padding-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);;
 }
 
 .mob-menu__link--current {
