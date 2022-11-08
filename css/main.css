@@ -731,9 +731,21 @@ header {
 
 .employee__photo {
   width: 100%;
-  height: 100%;
   margin-bottom: 30px;
 }
+@media screen and (min-width: 767px) {
+  .employee__photo {
+    width: 354px;
+    height: 374px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .employee__photo {
+    width: 270px;
+    height: 260px;
+  }
+}
+
 .employee__img {
   background-color: var(--primaci-bg-color);
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
