@@ -50,14 +50,15 @@
 
 .employee__photo {
   width: 100%;
+  height: 100%;
   margin-bottom: 30px;
   @media screen and (min-width: 767px) {
-    width: 354px;
-    height: 374px;
+  //   width: 354px;
+  //   height: 374px;
   }
   @media screen and (min-width: 1200px) {
-    width: 270px;
-    height: 260px;
+    // width: 270px;
+    // height: 260px;
   }
 }
 
