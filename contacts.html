@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <header>
+      <div>
+        <nav class="container">
+          <a href="./index.html" class="logo logo--header logo--header__contacts"
+            >Web<span class="logo__part logo__part--dark">Studio</span></a
+          >
+          <ul class="header__list list">
+            <li class="header__item">
+              <a href="./index.html" class="header__link">Студія</a>
+            </li>
+            <li class="header__item">
+              <a href="./portfolio.html" class="header__link">Портфоліо</a>
+            </li>
+            <li class="header__item">
+              <a href="./contacts.html" class="header__link header__link--accent">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- <ul class="contacts contacts--header list">
+          <li class="contacts__item">
+            <a class="contacts__link" href="mailto:info@devstudio.com"
+              ><svg class="contacts__icon" width="16" height="12">
+                <use href="./imeges/symbol-defs.svg#icon-mail"></use></svg
+              >info@devstudio.com</a
+            >
+          </li>
+          <li class="contacts__item">
+            <a class="contacts__link" href="tel:+380961111111"
+              ><svg class="contacts__icon" width="10" height="16">
+                <use href="./imeges/symbol-defs.svg#icon-phone"></use></svg
+              >+38 096 111 11 11</a
+            >
+          </li>
+        </ul> -->
+        <button type="button" class="menu-open" data-menu-open>
+          <svg width="40" height="40">
+            <use class="menu-btn__icon--menu" href="./imeges/symbol-defs.svg#icon-menu"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mob-menu is-hidden" data-menu>
+        <button type="button" class="menu-close" data-menu-close>
+          <svg width="40" height="40">
+            <use
+              class="menu-btn__icon--close"
+              href="./imeges/symbol-defs.svg#icon-menu-close"
+            ></use>
+          </svg>
+        </button>
+        <div class="mob-container">
+          <div class="mob-menu__top">
+            <ul class="mob-menu__list list">
+              <li class="mob-menu__item">
+                <a href="./index.html" class="mob-menu__link mob-menu__link--current">Студія</a>
+              </li>
+              <li class="mob-menu__item">
+                <a href="./portfolio.html" class="mob-menu__link">Портфоліо</a>
+              </li>
+              <li class="mob-menu__item">
+                <a href="" class="mob-menu__link">Контакти</a>
+              </li>
+            </ul>
+          </div>
+          <div class="mob-menu__bottom">
+            <div class="mob-contacts">
+              <ul class="mob-contacts__list list">
+                <li class="mob-contacts__item">
+                  <a class="mob-contacts__link" href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="mob-contacts__item">
+                  <a class="mob-contacts__link" href="tel:+380961111111">+38 096 111 11 11</a>
+                </li>
+              </ul>
+              <ul class="mob-menu__soc list">
+                <li class="mob-soc__link"><a href="#"></a>Instagram</li>
+                <li class="mob-soc__link"><a href="#"></a>Twitter</li>
+                <li class="mob-soc__link"><a href="#"></a>Facebook</li>
+                <li class="mob-soc__link"><a href="#"></a>LinkedIn</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+  </body>
+</html>

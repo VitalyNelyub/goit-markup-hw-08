@@ -1517,4 +1517,29 @@ header {
   .animation__text {
     padding: 63px 24px;
   }
+}
+
+.logo--header__contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 80px;
+}
+@media screen and (min-width: 320px) {
+  .logo--header__contacts {
+    font-size: 44px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .logo--header__contacts {
+    font-size: 94px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .logo--header__contacts {
+    font-size: 114px;
+  }
 }/*# sourceMappingURL=main.css.map */
